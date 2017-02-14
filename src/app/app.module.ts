@@ -2,7 +2,8 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
-import { routing } from './app.router';
+import { AppRoutingModule } from './app.routing.module';
+//import { routing } from './app.router';
 
 import { AppComponent } from './app.component';
 import { MenuComponent } from './menu/menu.component';
@@ -29,7 +30,8 @@ import { PessoasService } from './pessoas/pessoas.service';
     BrowserModule,
     FormsModule,
     HttpModule,
-    routing
+    AppRoutingModule
+    //routing
   ],
   providers: [PessoasService],
   bootstrap: [    
